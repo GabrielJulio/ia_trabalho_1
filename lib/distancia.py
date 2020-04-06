@@ -25,7 +25,8 @@ def euclidiana(class1_center, class2_center, class3_center, data):
         else:
             class3_qtd = class3_qtd + 1
 
-    print(f'\nQuantidade pela média Euclidiana:\n- Class1: {class1_qtd}\n- Class2: {class2_qtd}\n- Class3: {class3_qtd}')
+    print(f'\nQuantidade pela média Euclidiana:\n- Class 1: {class1_qtd}'
+          f'\n- Class 2: {class2_qtd}\n- Class 3: {class3_qtd}')
 
 
 def manhattan(class1_center, class2_center, class3_center, data):
@@ -54,7 +55,8 @@ def manhattan(class1_center, class2_center, class3_center, data):
         else:
             class3_qtd = class3_qtd + 1
 
-    print(f'\nQuantidade pela média Manhattan:\n- Class1: {class1_qtd}\n- Class2: {class2_qtd}\n- Class3: {class3_qtd}')
+    print(f'\nQuantidade pela média Manhattan:\n- Class 1: {class1_qtd}'
+          f'\n- Class 2: {class2_qtd}\n- Class 3: {class3_qtd}')
 
 
 def chebyshev(class1_center, class2_center, class3_center, data):
@@ -84,4 +86,5 @@ def chebyshev(class1_center, class2_center, class3_center, data):
         else:
             class3_qtd = class3_qtd + 1
 
-    print(f'\nQuantidade pela média Chebyshev:\n- Class1: {class1_qtd}\n- Class2: {class2_qtd}\n- Class3: {class3_qtd}')
+    print(f'\nQuantidade pela média Chebyshev:\n- Class 1: {class1_qtd}'
+          f'\n- Class 2: {class2_qtd}\n- Class 3: {class3_qtd}')
