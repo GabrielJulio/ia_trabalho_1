@@ -32,7 +32,7 @@ while not stop:
                     float(input('Digite o valor do atributo nº 3: ')),
                     float(input('Digite o valor do atributo nº 4: '))]
 
-    choice = int(input('Escolha uma das médias digitando o número correspondente:\n'
+    choice = int(input('\nEscolha uma das médias digitando o número correspondente:\n'
                        '1 - Euclidiana\n'
                        '2 - Manhattan\n'
                        '3 - Chebyshev\n'
