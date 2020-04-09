@@ -23,3 +23,47 @@ distancia.euclidiana(class1_center, class2_center, class3_center, data)
 distancia.manhattan(class1_center, class2_center, class3_center, data)
 
 distancia.chebyshev(class1_center, class2_center, class3_center, data)
+
+stop = False
+
+while not stop:
+    new_instance = [float(input('\n\nDigite o valor do atributo nº 1: ')),
+                    float(input('Digite o valor do atributo nº 2: ')),
+                    float(input('Digite o valor do atributo nº 3: ')),
+                    float(input('Digite o valor do atributo nº 4: '))]
+
+    choice = int(input('Escolha uma das médias digitando o número correspondente:\n'
+                       '1 - Euclidiana\n'
+                       '2 - Manhattan\n'
+                       '3 - Chebyshev\n'
+                       'Escolha: '))
+
+    print(f'\nA sua instância pertence a classe:', end=' ')
+    if choice == 1:
+        print(int(distancia.euclidiana(class1_center,
+                                       class2_center,
+                                       class3_center,
+                                       data,
+                                       individual_instance=new_instance)))
+    elif choice == 2:
+        print(int(distancia.manhattan(class1_center,
+                                      class2_center,
+                                      class3_center,
+                                      data,
+                                      individual_instance=new_instance)))
+    elif choice == 3:
+        print(int(distancia.chebyshev(class1_center,
+                                      class2_center,
+                                      class3_center,
+                                      data,
+                                      individual_instance=new_instance)))
+    else:
+        print('Escolha inválida, tente novamente!')
+        continue
+
+    response = input('Deseja testar com outra instância?\n\nDigite "S" para continuar ou "N" para sair: ')
+
+    if response[0].lower() == 's':
+        print('\n=== === === === Carregando === === === === ===', end='')
+
+exit()
